@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "chicken_nugget",
+	"version": "${version}",
+	"name": "Chicken Nugget",
+	"description": "Joke mod about little bits of chicken flesh and their power",
+	"authors": [
+		"scalyhat"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/chicken_nugget/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.scalyhat.chicken_nugget.ChickenNugget"
+		],
+		"fabric-datagen": [
+			"com.scalyhat.chicken_nugget.datagen.ChickenNuggetDataGenerator"
+		]
+	},
+	"mixins": [
+		"chicken_nugget.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.7",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"create": ">0.5"
+	}
+}
