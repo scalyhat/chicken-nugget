@@ -1,5 +1,6 @@
 package com.scalyhat.chicken_nugget.content;
 
+import com.scalyhat.chicken_nugget.Config;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.ai.TargetPredicate;
 import net.minecraft.entity.player.PlayerEntity;
@@ -38,7 +39,7 @@ public class SuspiciousNuggetItem extends Item {
             boolean doRandomTeleport = true;
 
             PlayerEntity potentialTarget = world.getClosestPlayer(playerTargetingPredicate, user);
-            if (potentialTarget != null) {
+            if (potentialTarget != null && Config.doSuspiciousTeleport.get()) {
                 double targetDirectionRad = Math.toRadians(potentialTarget.getHeadYaw()+90);
                 Vec3d targetPosition = potentialTarget.getPos().subtract(new Vec3d(Math.cos(targetDirectionRad), 0, Math.sin(targetDirectionRad))); // position 1 block behind target, irrespective of pitch
                 Vec3d targetRotation = potentialTarget.getPos().subtract(targetPosition).normalize(); // rotation from user to target

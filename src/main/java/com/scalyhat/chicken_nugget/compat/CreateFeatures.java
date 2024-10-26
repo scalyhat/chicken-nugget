@@ -1,6 +1,7 @@
 package com.scalyhat.chicken_nugget.compat;
 
 import com.scalyhat.chicken_nugget.ChickenNugget;
+import com.scalyhat.chicken_nugget.Config;
 import com.scalyhat.chicken_nugget.content.ItemInitializer;
 import com.simibubi.create.AllEntityTypes;
 import com.simibubi.create.content.equipment.potatoCannon.PotatoCannonProjectileType;
@@ -38,8 +39,8 @@ public class CreateFeatures {
                 ).damage(2).reloadTicks(5).renderTumbling()
                         .onEntityHit((entityHitResult -> {
                             if (entityHitResult.getEntity() instanceof LivingEntity target) {
-                                if (chickenCreateRandom.nextFloat() > 0.7) {
-                                    target.addStatusEffect(new StatusEffectInstance(StatusEffects.NAUSEA, 40));
+                                if (chickenCreateRandom.nextFloat() < Config.ammoNauseaChance.get()) {
+                                    target.addStatusEffect(new StatusEffectInstance(StatusEffects.NAUSEA, 120));
                                 }
                             }
                             return false;

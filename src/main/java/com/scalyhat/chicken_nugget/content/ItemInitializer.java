@@ -18,8 +18,8 @@ public class ItemInitializer {
     public static final Item rawChickenNugget = Registry.register(Registries.ITEM,
             Identifier.of(ChickenNugget.MOD_ID, "raw_chicken_nugget"),
             new Item(new Item.Settings().food(new FoodComponent.Builder().meat().hunger(1).saturationModifier(0).snack()
-                    .statusEffect(new StatusEffectInstance(StatusEffects.HUNGER, 600), 0.5f)
-                    .statusEffect(new StatusEffectInstance(StatusEffects.NAUSEA, 200), 1f)
+                    .statusEffect(new StatusEffectInstance(StatusEffects.HUNGER, 600), 0.3f)
+                    .statusEffect(new StatusEffectInstance(StatusEffects.NAUSEA, 200), 0.3f)
                     .build()))
     );
     public static final Item cookedChickenNugget = Registry.register(Registries.ITEM,
