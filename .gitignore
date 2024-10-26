@@ -27,6 +27,7 @@ replay_pid*
 run/
 
 # env files
+*/.cache/
 .gradle/
 .idea/
 build/

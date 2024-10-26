@@ -1,0 +1,38 @@
+{
+  "criteria": {
+    "got_chicken_ingot": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "chicken_nugget:raw_chicken_ingot"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png",
+    "description": {
+      "text": "Attempt to unnugget a chicken; despair in your inability to"
+    },
+    "frame": "goal",
+    "hidden": true,
+    "icon": {
+      "item": "chicken_nugget:raw_chicken_ingot"
+    },
+    "show_toast": false,
+    "title": {
+      "text": "Fixed point in history"
+    }
+  },
+  "requirements": [
+    [
+      "got_chicken_ingot"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

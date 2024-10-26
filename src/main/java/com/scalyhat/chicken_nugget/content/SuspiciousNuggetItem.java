@@ -1,22 +1,15 @@
 package com.scalyhat.chicken_nugget.content;
 
-import net.minecraft.client.sound.Sound;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.ai.TargetPredicate;
-import net.minecraft.entity.passive.FoxEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundCategory;
-import net.minecraft.sound.SoundEvent;
-import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.math.*;
 import net.minecraft.world.World;
 import net.minecraft.world.event.GameEvent;
-
-import java.util.EnumSet;
-import java.util.function.Predicate;
 
 import static com.scalyhat.chicken_nugget.ChickenNugget.susNote;
 

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "chicken_nugget:item/amogus_chicken_nugget"
+  }
+}

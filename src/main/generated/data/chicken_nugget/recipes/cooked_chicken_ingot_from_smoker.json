@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smoking",
+  "category": "food",
+  "cookingtime": 100,
+  "experience": 0.1,
+  "ingredient": {
+    "item": "chicken_nugget:raw_chicken_ingot"
+  },
+  "result": "chicken_nugget:cooked_chicken_ingot"
+}

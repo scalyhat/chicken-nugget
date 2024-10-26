@@ -5,8 +5,6 @@ import com.scalyhat.chicken_nugget.content.ItemInitializer;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.loader.api.FabricLoader;
-import net.minecraft.client.sound.Sound;
-import net.minecraft.client.sound.SoundEngine;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.SoundEvent;

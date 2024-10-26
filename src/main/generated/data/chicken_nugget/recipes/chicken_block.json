@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "chicken_nugget:raw_chicken_ingot"
+    },
+    {
+      "item": "chicken_nugget:raw_chicken_ingot"
+    },
+    {
+      "item": "chicken_nugget:raw_chicken_ingot"
+    },
+    {
+      "item": "chicken_nugget:raw_chicken_ingot"
+    },
+    {
+      "item": "chicken_nugget:raw_chicken_ingot"
+    },
+    {
+      "item": "chicken_nugget:raw_chicken_ingot"
+    },
+    {
+      "item": "chicken_nugget:raw_chicken_ingot"
+    },
+    {
+      "item": "chicken_nugget:raw_chicken_ingot"
+    },
+    {
+      "item": "chicken_nugget:raw_chicken_ingot"
+    }
+  ],
+  "result": {
+    "item": "chicken_nugget:chicken_block"
+  }
+}
